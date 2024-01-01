@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(252, 226, 255);
+}
+
+.container {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    background: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 80px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    box-shadow: 0 0 10px rgb(197, 197, 197);
+}
+
+.todo-list h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.todo-list h1 i {
+    margin-left: 10px;
+    color: black;
+}
+
+#task-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightgrey;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#task-input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.add-task {
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.add-task:hover {
+    background: #1d1d1d;
+}
+
+.add-task i {
+    margin-left: 5px;
+}
+
+.tasks-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightgray;
+    border-radius: 30px;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tasks input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.delete {
+    color: red;
+    margin:0 20px 0 20px;
+}
