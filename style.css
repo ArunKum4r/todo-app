@@ -20,6 +20,7 @@ body {
     justify-content: center;
 }
 
+
 .todo-list {
     background: white;
     width: 100%;
@@ -31,9 +32,12 @@ body {
 }
 
 .todo-list h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
     font-weight: 900;
-    margin-bottom: 25px;
+    margin: 0 10px 25px 10px;
 }
 
 .todo-list h1 i {
@@ -82,6 +86,7 @@ body {
 .tasks-heading {
     text-align: left;
     font-size: 16px;
+    margin-left: 10px;
     margin-bottom: 20px;
     font-weight: 900;
 }
@@ -136,4 +141,70 @@ body {
 
 .delete:hover {
     color: #fe4a4a;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 25px 10px;
+}
+
+.filter-container button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-container button:hover {
+    box-shadow:  0 0 5px black;
+}
+
+.filter-container button:focus {
+    border: 0.5px solid black;
+}
+
+.filter-container h4 {
+    color: hsl(0, 1%, 32%);
+    font-weight: 400;
+}
+
+.all {
+    background: #3db0f8;
+}
+
+.in-progress {
+    background: orange;
+}
+
+.completed {
+    background: green;
+}
+
+@media screen and (max-width: 636px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .todo-list {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-left: 20;
+        max-width: 100%;
+    }
+
+    .date {
+        font-size: 8px;
+    }
+
+    .filter-container {
+        margin-bottom: 25px;
+    }
 }
