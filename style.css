@@ -79,8 +79,9 @@ body {
 
 /* Lists */
 
-.tasks-list h2 {
-    text-align: center;
+.tasks-heading {
+    text-align: left;
+    font-size: 16px;
     margin-bottom: 20px;
     font-weight: 900;
 }
@@ -120,6 +121,12 @@ body {
     border: none;
     background: transparent;
     padding: 10px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: green;
 }
 
 .delete {
