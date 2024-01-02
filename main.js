@@ -13,6 +13,16 @@ window.addEventListener("load", () => {
       return;
     }
 
+    // Date
+    const date = new Date().toLocaleTimeString("en-GB", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+
     const tasks = document.createElement("div");
     tasks.classList.add("tasks");
 
@@ -23,6 +33,10 @@ window.addEventListener("load", () => {
     list.value = task;
 
     // Task Action buttons
+
+    const dateDisp = document.createElement("p");
+    dateDisp.classList.add("date");
+    dateDisp.innerHTML = date;
 
     const actions = document.createElement("div");
     actions.classList.add("actions");
@@ -35,6 +49,7 @@ window.addEventListener("load", () => {
     editButton.classList.add("edit");
     editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
 
+    actions.appendChild(dateDisp);
     actions.appendChild(editButton);
     actions.appendChild(dltButton);
 
